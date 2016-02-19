@@ -1,0 +1,35 @@
+{
+  "author": "Robert Kowalski <rok@kowalski.gd>",
+  "name": "tulips",
+  "description": "An ini encoder/decoder for node that can handle multiple keys",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robertkowalski/tulips.git"
+  },
+  "main": "lib/tulips.js",
+  "scripts": {
+    "pretest": "make && standard",
+    "prepublish": "npm t && make",
+    "test": "tap test/*.js",
+    "babel": "babel"
+  },
+  "dependencies": {
+    "ini": "^1.3.4"
+  },
+  "bundleDependencies": [
+    "ini"
+  ],
+  "standard": {
+    "ignore": [
+      "lib/**"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "standard": "^4.0.1",
+    "tap": "^2.0.0"
+  },
+  "license": "ISC"
+}
